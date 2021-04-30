@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Popup Extension",
+    "version": "1.0.0",
+    "description": "Popup a menu at right corner of the window",
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "sketch/index.html",
+        "default_title": "Generate a maze !!"
+    },
+    "permissions": ["tabs"]
+}

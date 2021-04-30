@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Bookmarklet",
+    "version": "1.0.0",
+    "description": "Do something on current page",
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon16.png"
+    }
+}

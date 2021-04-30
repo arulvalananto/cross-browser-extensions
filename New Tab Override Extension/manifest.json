@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "New Tab Override Extension",
+    "version": "1.0.0",
+    "description": "Overriding chrome default page",
+
+    "chrome_url_overrides": {
+        "newtab": "sketch/index.html"
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js; object-src 'self'"
+}

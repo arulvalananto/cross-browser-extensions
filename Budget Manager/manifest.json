@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "budget manager",
+    "version": "1.0.0",
+    "description": "it's managing expenses based on your budget",
+    "icons": {
+        "128": "icon128.jpg",
+        "48": "icon48.jpg",
+        "16": "icon16.jpg"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon16.jpg",
+        "default_title": "Budget Manager"
+    },
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "eventPage.js"
+    },
+
+    "permissions": ["storage", "notifications", "contextMenus"]
+}

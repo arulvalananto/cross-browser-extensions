@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Page Action Extension",
+    "version": "1.0.0",
+    "description": "It point out important words in particular tab",
+    "icons": {
+        "128": "logo128.png",
+        "48": "logo48.png",
+        "16": "logo16.png"
+    },
+    "action": {
+        "default_icons": "logo16.png",
+        "default_popup": "popup.html",
+        "default_title": "Page Font Style"
+    },
+    "background": {
+        "service_worker": "eventPage.js"
+    },
+    "permissions": ["tabs"]
+}
